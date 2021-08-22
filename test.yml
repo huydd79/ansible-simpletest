@@ -4,8 +4,8 @@
   tasks:
     - name: Get datetime from the system
       shell: "date"
-      register: datetime
+      register: current_time
     - name: Put the new update '/var/www/html/index.html'.
       copy:
-        content: <h1>Hello, it worked!!!</h1><br>Updated at {{ datetime }}
+        content: <h1>Hello, it worked!!!</h1><br>Updated at {{ current_time }}
         dest: /var/www/html/index.html
