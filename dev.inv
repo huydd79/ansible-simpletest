@@ -1,2 +1,3 @@
 [testnodes]
 172.16.1.211 ansible_user=ec2-user
+
