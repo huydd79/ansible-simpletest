@@ -2,7 +2,10 @@
 - name: This is sample playbook
   hosts: testnodes
   tasks:
+    - name: Get datetime from the system
+      shell: "date"
+      register: datetime
     - name: Put the new update '/var/www/html/index.html'.
       copy:
-        content: <h1>Hello, it worked!!!</h1><br>Updated at ...
+        content: <h1>Hello, it worked!!!</h1><br>Updated at {{ datetime }}
         dest: /var/www/html/index.html
