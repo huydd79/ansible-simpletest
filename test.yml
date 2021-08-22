@@ -4,5 +4,5 @@
   tasks:
     - name: Put the new update '/var/www/html/index.html'.
       copy:
-        content: hello world
+        content: <h1>Hello, it worked!!!<h1><br>Update time: XX/XX/XX XX:XX
         dest: /var/www/html/index.html
