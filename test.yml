@@ -3,8 +3,6 @@
   hosts: testnodes
   tasks:
     - name: Put the new update '/var/www/html/index.html'.
-      debug:
-        var: ansible_date_time
       copy:
         content: <h1>Hello, it worked!!!</h1><br>Updated at ...
         dest: /var/www/html/index.html
