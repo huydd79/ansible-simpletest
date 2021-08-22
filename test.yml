@@ -4,5 +4,6 @@
   tasks:
     - name: Put the new update '/var/www/html/index.html'.
       copy:
+        var: ansible_date_time
         content: <h1>Hello, it worked!!!</h1><br>Updated at {{ ansible_date_time.date }} {{ ansible_date_time.timme }}
         dest: /var/www/html/index.html
