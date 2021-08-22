@@ -2,7 +2,7 @@
 - name: This is sample playbook
   hosts: testnodes
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
+    - name: Put the new update '/var/www/html/index.html'.
       copy:
         content: hello world
         dest: /var/www/html/index.html
