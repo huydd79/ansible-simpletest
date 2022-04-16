@@ -5,4 +5,4 @@
      shell: whoami
      register: theuser
    - name: Print out the result
-     debug: msg="Logged in at {{ thehost.stdout }}"
+     debug: msg="Logged in as {{ theuser.stdout }}"
