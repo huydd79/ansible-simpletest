@@ -8,4 +8,4 @@
     - name: Put the new update '/var/www/html/jenkins/demo01/index.html'.
       copy:
         content: <h1>Hello, it worked!!!</h1><br>Updated at {{ current_time.stdout }}
-        dest: /var/www/html/index.html
+        dest: /var/www/html/jenkins/demo01/index.html
